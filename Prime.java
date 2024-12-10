@@ -15,7 +15,7 @@ public class Prime {
     public void primeFinder() {
         BigDecimal[] divisionResult;
 
-        for (int i = 2; i < this.limit; i++) {
+        for (int i = 2; i <= this.limit; i++) {
             BigDecimal fac = factorial(i - 1);
             BigDecimal convert = BigDecimal.valueOf(i);
             divisionResult = fac.add(BigDecimal.ONE).divideAndRemainder(convert);
